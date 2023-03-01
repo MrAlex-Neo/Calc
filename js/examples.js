@@ -9,50 +9,6 @@ let message
 let myAge = 29
 let meet
 
-// if (es == "amount") {
-//     answer = a + b
-//     message = `Ваш ответ: ${answer}!`
-// } else {
-//     if (es == "arith") {
-//         answer = (a + b) / 2
-//         message = `Ваш ответ: ${answer}!`
-//     } else {
-//         if (es == "+") {
-//             answer = a + b
-//             message = `Ваш ответ: ${answer}!`      
-//         } else {
-//             if (es == "-") {
-//                 answer = a - b
-//                 message = `Ваш ответ: ${answer}!`  
-//             } else {
-//                 if (es == "*") {
-//                     answer = a * b
-//                     message = `Ваш ответ: ${answer}!` 
-//                 } else {
-//                     if (es == "/") {
-//                         answer = a / b
-//                         message = `Ваш ответ: ${answer}!` 
-//                     } else {
-//                         if (es == "percent") {
-//                             answer = (a / 100) * b
-//                             message = `Ваш ответ: ${answer}%!` 
-//                         } else {
-//                             if (es == "degree") {
-//                                 answer = a ** b
-//                                 message = `Ваш ответ: ${answer}!` 
-//                             } else {
-//                                 message = "Ошибка ввода!"
-//                             }
-                            
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
 switch (es){
     case 'arith':
         answer = (a + b) / 2
@@ -149,7 +105,7 @@ function draw() {
   for (let i = 0; i < arr.length; i++) {
     // выбираем случайный набор символов
     let txt = matrix[Math.floor(Math.random() * matrix.length)]
-
+    
     // рисуем символы
     // двигаемся вправо и вниз
     // fillText(набор символов, координата x = значение i, умноженное на размер шрифта, координата y = значение arr, умноженное на размер шрифта)
@@ -165,5 +121,4 @@ function draw() {
 }
 
 setInterval(draw, 123)
-
 window.addEventListener('resize', () => location.reload())
